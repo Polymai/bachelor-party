@@ -1,0 +1,26 @@
+<h2 class="panel-title">RSVP</h2>
+<p class="panel-note">Set your RSVP status. Everyone can update their own status.</p>
+
+<div class="field">
+  <div class="label">Your name</div>
+  <input id="rsvp-name" class="input" type="text" placeholder="e.g., Sam" />
+</div>
+
+<div class="field">
+  <div class="label">Status</div>
+  <select id="rsvp-status" class="input">
+    <option value="yes">Yes</option>
+    <option value="maybe">Maybe</option>
+    <option value="no">No</option>
+  </select>
+</div>
+
+<div class="row">
+  <button id="btn-save-rsvp" class="btn btn-primary" type="button">Save RSVP</button>
+</div>
+<div id="rsvp-msg" class="helper" aria-live="polite"></div>
+
+<div class="hr"></div>
+
+<h3 class="panel-title">Attendees</h3>
+<div id="rsvp-list" class="helper" aria-live="polite"></div>

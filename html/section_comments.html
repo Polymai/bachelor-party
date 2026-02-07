@@ -1,0 +1,21 @@
+<h2 class="panel-title">Comments</h2>
+<p class="panel-note">Post updates for the group.</p>
+
+<form id="form-add-comment">
+  <div class="field">
+    <div class="label">Your name</div>
+    <input id="comment-name" class="input" type="text" placeholder="e.g., Jordan" required />
+  </div>
+  <div class="field">
+    <div class="label">Message</div>
+    <textarea id="comment-text" class="textarea" placeholder="Write a message..." required></textarea>
+  </div>
+  <div class="row">
+    <button class="btn btn-primary" type="submit">Post</button>
+  </div>
+  <div id="comment-msg" class="helper" aria-live="polite"></div>
+</form>
+
+<div class="hr"></div>
+
+<div id="comments-list" class="helper" aria-live="polite"></div>

@@ -1,0 +1,52 @@
+<div class="dashboard">
+  <div class="dash-hero">
+    <h1 class="dash-title">Dashboard</h1>
+    <p class="dash-sub">Create a new event or join an existing one with a code.</p>
+  </div>
+
+  <div class="dash-grid">
+    <div class="dash-card">
+      <h3>Create event</h3>
+      <p>Creates a new bachelor party event. You become the admin.</p>
+      <form id="form-create-event">
+        <div class="field">
+          <div class="label">Event name</div>
+          <input id="create-event-name" class="input" type="text" placeholder="e.g., Miami Weekend" required />
+        </div>
+        <div class="row">
+          <button class="btn btn-primary" type="submit">Create</button>
+        </div>
+        <div id="create-event-msg" class="helper" aria-live="polite"></div>
+      </form>
+    </div>
+
+    <div class="dash-card">
+      <h3>Join event</h3>
+      <p>Enter the event code you received.</p>
+      <form id="form-join-event">
+        <div class="field">
+          <div class="label">Event code</div>
+          <input id="join-event-code" class="input" type="text" placeholder="e.g., BP-7K3M9Q" required />
+        </div>
+        <div class="field">
+          <div class="label">Your display name</div>
+          <input id="join-display-name" class="input" type="text" placeholder="e.g., Alex" required />
+        </div>
+        <div class="row">
+          <button class="btn btn-primary" type="submit">Join</button>
+        </div>
+        <div id="join-event-msg" class="helper" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="dash-card">
+    <h3>Current event</h3>
+    <p class="helper">If you already joined or created an event on this device, you can open it directly.</p>
+    <div class="row">
+      <button id="btn-open-current-event" class="btn" type="button">Open current event</button>
+      <button id="btn-clear-current-event" class="btn btn-danger" type="button">Clear</button>
+    </div>
+    <div id="current-event-msg" class="helper" aria-live="polite"></div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<h2 class="panel-title">Place</h2>
+<p class="panel-note">Pick a location and share it with the group.</p>
+
+<div class="field">
+  <div class="label">Location name</div>
+  <input id="place-name" class="input" type="text" placeholder="e.g., Downtown" />
+</div>
+<div class="field">
+  <div class="label">Notes</div>
+  <textarea id="place-notes" class="textarea" placeholder="Details, address hints, etc."></textarea>
+</div>
+
+<div class="map-shell">
+  <div class="map-row">
+    <button id="btn-use-my-location" class="map-pill" type="button">Use my location</button>
+    <button id="btn-clear-location" class="map-pill" type="button">Clear pin</button>
+  </div>
+  <div id="map" class="map-box" aria-label="Map"></div>
+  <div id="place-coords" class="helper" aria-live="polite"></div>
+</div>
+
+<div class="row">
+  <button id="btn-save-place" class="btn btn-primary" type="button">Save place</button>
+</div>
+<div id="place-msg" class="helper" aria-live="polite"></div>

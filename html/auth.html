@@ -1,0 +1,44 @@
+<div class="auth">
+  <div class="auth-card">
+    <h1 class="auth-title">Welcome</h1>
+    <p class="auth-sub">Sign up or log in to manage your bachelor party event.</p>
+
+    <div class="auth-grid">
+      <div>
+        <h2 class="auth-title">Sign up</h2>
+        <form id="form-signup">
+          <div class="field">
+            <div class="label">Email</div>
+            <input id="signup-email" class="input" type="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <div class="label">Password</div>
+            <input id="signup-password" class="input" type="password" autocomplete="new-password" minlength="6" required />
+          </div>
+          <div class="row">
+            <button class="btn btn-primary" type="submit">Create account</button>
+          </div>
+          <div id="signup-msg" class="helper" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <div>
+        <h2 class="auth-title">Log in</h2>
+        <form id="form-login">
+          <div class="field">
+            <div class="label">Email</div>
+            <input id="login-email" class="input" type="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <div class="label">Password</div>
+            <input id="login-password" class="input" type="password" autocomplete="current-password" required />
+          </div>
+          <div class="row">
+            <button class="btn btn-primary" type="submit">Log in</button>
+          </div>
+          <div id="login-msg" class="helper" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
